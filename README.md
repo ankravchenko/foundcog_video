@@ -1,1 +1,1 @@
-# foundcog_video
+C_starttime.pickle and N_starttime.pickle - data structures of video start time (in seconds). They are dictionaries where the key is the participant's code/name, and the value is a list of starting times for all the videos in the folder.
