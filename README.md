@@ -1,10 +1,17 @@
 Tags for eye-tracking are stored in the csv folder.
 
-Naming convention
+Naming convention:
 one file per video, ID_videoname.csv corresponds to s3://foundcog-physio-video/ID/videoname.avi
 
-CSV columns:  timestamp	eyes, (open/closed),	other tags
+CSV columns:  timestamp,	eyes (open/closed),	other tags
 parse_csv.py parses video to a pandas dataframe
+
+Tags used:  
+timestamp column: minutes:seconds (e.g. 02:25)
+eyes (open/closed) column: 'open'/'closed'/'half-closed'/'n/a' (these need to be consistent)
+other tags: any other comments, separated by commas (so far I'm using "crying", "fidgety", "paying attention", "looking away", "bored", "start", "end", "glucose")
+
+(check existing csv files for clarity)
 
 *
 
